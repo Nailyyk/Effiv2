@@ -1,0 +1,105 @@
+.header{
+    width: 100%;
+    margin-top: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-image: url(/assets/LogoNoir2.png);
+    height: 100px
+}
+
+#menu,
+.menu-bg {
+    top: 0;
+    left: 0;
+    position: absolute
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, #dc7405, #dc6605);
+    border-radius: 50%
+}
+
+#menu {
+    z-index: 2
+}
+
+#menu-bar {
+    width: 45px;
+    height: 40px
+}
+
+.bar {
+    height: 5px;
+    background-color: #df7f30;
+    display: block;
+    border-radius: 5px
+}
+
+#bar1 {
+    transform: translateY(-4px)
+}
+
+#bar3 {
+    transform: translateY(4px)
+}
+
+.nav {
+    display: none
+}
+
+.nav ul {
+    padding: 0 22px
+}
+
+.nav li {
+    padding: 12px 0
+}
+
+.nav li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+    font-size: 20px;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color .3s
+}
+
+
+.change .bar {
+    background-color: #fff
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg)
+}
+
+.change #bar2 {
+    opacity: 0
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg)
+}
+
+.change-bg {
+    width: 620px;
+    height: 560px;
+    transform: translate(-60%, -30%)
+}
+
+.cop{
+    align-content: center
+}
+
+.cop a {
+    display: flex;
+    justify-content: space-between
+}
+
+.cop,
+.cop span{
+    display: flex
+}

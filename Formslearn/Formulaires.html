@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires</title>
+    <link rel="stylesheet" href="/css/styletel.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/mail/icn.png">
+</head>
+
+<body>
+    <header class="maine">
+
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="../index.html">Accueil </a></li>
+
+                    <li><a href="https://efficiencecreative.fr/qui-sommes-nous/">A propos</a></li>
+
+                    <li><a href="https://efficiencecreative.fr/ateliers-numeriques/">Ateliers</a></li>
+
+                    <li><a href="https://efficiencecreative.fr/efficience-contact/">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <div id="root"></div>
+    </header>
+
+    <div class="tab">
+        <button id="tablinks" onclick="openOnglet(event,'Intro')">Mails</button>
+        <button id="tablinks" onclick="openOnglet(event,'Register')">Formulaire</button>
+        <button id="tablinks" onclick="openOnglet(event,'Pratique')">À éviter</button>
+        <button id="tablinks" onclick="openOnglet(event,'Gngn')">Autre</button>
+    </div>
+
+
+    <div class="presentation">
+        <video autoplay muted loop id="myVideo">
+            <source src="../assets/formulaires.mp4" type="video/mp4">
+        </video>
+        <div class="lefts">
+            <h1>Nous allons voir les différents services.</h1>
+        </div>
+        <div class="rights">
+            <p>Si vous êtes grands débutants, nous allons voir pas à pas le fonctionnement d'un ordinateur et notamment
+                de
+                ses outils, devant vous se présente un clavier, une souris, un écran et pour finir une unité centrale
+                aussi
+                appelée "tour".
+            </p>
+        </div>
+    </div>
+    <div id="all" >
+        <div class="tabcontent" id="Intro">
+
+            <div class="emiel">
+            <h1><u><img src="/assets/mail/e-mail.png">Boite mail<img src="/assets/mail/e-mail.png"></u></h1>
+
+            <p>Dans cette partie, nous allons voir pas à pas la création d'une boite mail.</p>
+            <img src="/assets/mail/gmail.png">
+            <section class="informations">
+                <h2><u>1 - Informations</u></h2>
+                <p>
+                    Ci dessus, vous pouvez voir la première page de création d'une boîte mail, vous devez premièrement
+                    inscrire
+                    votre nom et
+                    prénom, dans l'encadré en dessous vous devez choisir un nom d'utilisateur qui sera le nom de votre
+                    boîte
+                    mail.
+                    Par la suite, vous devez créer un mot de passe, essayez de trouver un mot de passe contenant minimum
+                    8
+                    caractères
+                    mélangeant chiffres/lettres/caractères spéciaux comme des "@" etc, évitez les mots simple du
+                    dictionnaire,
+                    les dates de
+                    naissance ainsi que les noms/prénoms.
+                    Une fois ces informations saisies, cliquez sur <img src="/assets/mail/suivant.png">, ce qui vous emmenera à la page ci-dessous.
+                </p>
+            </section>
+            <img src="/assets/mail/gmail2.png">
+            <section class="informations">
+                <h2><u>2 - Informations</u></h2>
+                <p>
+                    Une fois à cette étape, vous avez le choix de renseigner votre numéro de téléphone ou non ainsi
+                    qu'une
+                    adresse mail de "récupération" en cas de perte du mot de passe ou de piratage.
+                    Ensuite, saisissez votre date de naissance et choisissez votre genre (homme, femme, autre.)
+                    Cliquez ensuite sur suivant.
+                </p>
+            </section>
+            <img src="/assets/mail/gmail3.png">
+            <section class="informations">
+                <h2><u>3 - Personnalisation</u></h2>
+                <p>
+                    Ici, vous avez la possibilité de choisir personnalisation express (recommandé) ou personnalisation
+                    manuelle.
+                    Si vous avez choisi personnalisation express, vous aurez une page où sera inscrit les paramètres et
+                    les
+                    cookies, vous devrez confirmer pour accéder aux règles de confidentialité et conditions
+                    d'utilisation,
+                    vous
+                    devrez accepter aussi.
+                </p>
+            </section>
+            <h2><u>Finalité</u></h2>
+            <img src="/assets/mail/gmail4.png" id="interf"> <br/>
+            <section id="exp" class="informations">
+
+                <p>
+                    Ici vous retrouvez la page d'accueil de votre boîte mail, à gauche se trouve le bouton nouveau
+                    message
+                    <img src="/assets/mail/nwms-removebg-preview.png">, quand vous aurez cliquer dessus, un cadre va
+                    s'ouvrir en bas à droite, vous devrez renseigner l'adresse e-mail de la personne à qui vous allez
+                    l'envoyer, l'objet c'est à dire le sujet du mail ensuite votre message et/ou les documents que vous
+                    souhaitez transmettre.
+                </p>
+            </section>
+        </div>
+        </div>
+
+        <div class="tabcontent" id="Register">
+            <div class="form-style-10">
+                <h1>S'enregistrer<span>Inscrivez vous!</span></h1>
+                <form>
+                    <div class="section"><span>1</span>Nom & prénom</div>
+                    <div class="inner-wrap">
+                        <label>Noms <input type="text" name="field1" /></label>
+                        <label>Prénoms <input type="text" name="field2" /></label>
+                    </div>
+
+                    <div class="section"><span>2</span>Email & Téléphone</div>
+                    <div class="inner-wrap">
+                        <label>Email <input type="email" name="field3" /></label>
+                        <label>Numéro de téléphone <input type="text" name="field4" /></label>
+                    </div>
+
+                    <div class="section"><span>3</span>Mot de passe</div>
+                    <div class="inner-wrap">
+                        <label>Mot de passe <input type="password" name="field5" /></label>
+                        <label>Confirmer Mot de passe <input type="password" name="field6" /></label>
+                    </div>
+                    <div class="button-section">
+                        <input type="submit" name="Valider" />
+                        <span class="privacy-policy">
+                            <input type="checkbox" name="field7">Accepter les conditions d'utilisation. <br />
+                            <input type="checkbox" name="field7">Accepter de recevoir les offres promotionelles.
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="tabcontent" id="Pratique">
+        <h3>Pratique</h3>
+        <p>Bienvenue sur la page Pratique</p>
+        <div class="picture">
+            <img src="/assets/form.png">
+        </div>
+        
+        <div class="tabcontent" id="Gngn">
+            <h3>Gngn</h3>
+            <p>Bienvenue sur la page Gngn</p>
+            <div class="picture">
+                <img src="/assets/form.png">
+            </div>
+        </div>
+        
+    </div>
+
+<input type="button" value="Large" onclick="document.getElementById('all').style.fontSize = '2.0em'">
+    
+
+    <footer>
+        <div class="cop">
+
+            <span>
+                Copyright <p style="color: orange; "> &copy; </p>Efficience
+            </span>
+
+        </div>
+    </footer>
+</body>
+<script src="/js/javascript.js"></script>
+<script src="/js/dragand.js"></script>
+<script src="/js/script.js"></script>
+
+</html>

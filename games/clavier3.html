@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="icon" href="../assets/iccla.png">
+
+    <title>Clavier 4 </title>
+
+</head>
+
+<body>
+    <button id="settings-btn" class="settings-btn">
+        ⚙️
+    </button>
+    <div id="settings" class="settings">
+        <form id="settings-form">
+            <div>
+                <label for="difficulty">Difficulté</label>
+                <select id="difficulty">
+                    <option value="easy">Facile</option>
+                    <option value="medium">Moyen</option>
+                    <option value="hard">Dur</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    <div class="maine">
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="../index.html">Accueil </a></li>
+
+                    <li><a href="https://efficiencecreative.fr/qui-sommes-nous/">A propos </a></li>
+
+                    <li><a href="https://efficiencecreative.fr/ateliers-numeriques/">Ateliers</a></li>
+
+                    <li><a href="https://efficiencecreative.fr/efficience-contact/">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <div id="root"></div>
+    </div>
+
+
+
+    <h1>Entraînement de niveau 3</h1>
+    <div class="container">
+        <h2>⌨️ Jeu de vitesse ⌨️</h2>
+        <small>Écrivez le mot qui s'affiche : </small>
+
+        <h1 id="word"></h1>
+
+        <input type="text" id="text" autocomplete="off" placeholder="Écrivez le mot ici..." />
+
+        <p class="time-container">Temps restant: <span id="time">10s</span></p>
+
+        <p class="score-container">Score: <span id="score">0</span></p>
+
+        <div id="end-game-container" class="end-game-container"></div>
+    </div>
+
+    <footer>
+        <div class="cop">
+            <!-- <a href="./Clavier2.html">
+                <img src="../assets/back.png">
+            </a> -->
+            <span>
+                Copyright <p style="color: orange; "> &copy; </p>Efficience
+            </span>
+            <!-- <div class="leftbut">
+                <a href="./clavier4.html">
+                    <img src="../assets/next.png">
+                </a>
+            </div> -->
+        </div>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

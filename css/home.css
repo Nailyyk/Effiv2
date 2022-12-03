@@ -1,0 +1,459 @@
+body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #00030a;
+    height: 80%;
+    font-size: 25px;
+}
+
+.cop2,
+body {
+    flex-direction: row
+}
+
+.bar,
+.maine,
+body {
+    width: 100%
+}
+
+.card a,
+.nav li a {
+    text-decoration: none
+}
+
+.liensdroite ul,
+.nav li,
+ul li {
+    list-style: none
+}
+
+.cop,
+.cop2 {
+    align-content: center
+}
+
+.maine {
+    margin-top: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-image: url(/assets/LogoNoir2.png);
+    height: 100px;
+}
+
+/* Navbar burger */
+
+#tap-target,
+* {
+    box-sizing: border-box
+}
+
+#tap-target,
+.bar,
+.menu-bg,
+.nav {
+    transition: .3s
+}
+
+#menu-bar,
+.menu-bg {
+    margin: 30px 0 20px 20px
+}
+
+.Headad,
+.cop a {
+    display: flex;
+    justify-content: space-between
+}
+
+
+
+.liensdroite ul {
+    display: flex;
+    padding: 5px;
+    align-items: center
+}
+
+#menu {
+    z-index: 2
+}
+
+#menu-bar {
+    width: 45px;
+    height: 40px
+}
+
+.bar {
+    height: 5px;
+    background-color: #df7f30;
+    display: block;
+    border-radius: 5px
+}
+
+#bar1 {
+    transform: translateY(-4px)
+}
+
+#bar3 {
+    transform: translateY(4px)
+}
+
+.nav {
+    display: none
+}
+
+.nav ul {
+    padding: 0 22px
+}
+
+.nav li {
+    padding: 12px 0
+}
+
+.nav li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color .3s
+}
+
+li a:hover {
+    text-decoration-color: rgb(234, 231, 231)
+}
+
+#menu,
+.menu-bg {
+    top: 0;
+    left: 0;
+    position: absolute
+}
+
+.menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, #dc7405, #dc6605);
+    border-radius: 50%
+}
+
+.change {
+    display: block
+}
+
+#tap-target,
+
+.card-body,
+
+.cop,
+.cop span,
+.cop2 {
+    display: flex
+}
+
+.change .bar {
+    background-color: #fff
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg)
+}
+
+.change #bar2 {
+    opacity: 0
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg)
+}
+
+.change-bg {
+    width: 620px;
+    height: 500px;
+    transform: translate(-60%, -30%)
+}
+
+
+
+/* Cartes milieux  */
+
+.card {
+    margin: 50px 10px 10px;
+    background-color: rgba(255, 255, 255, .25);
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    width: 300px;
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+}
+
+.card-header img:hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+}
+
+
+.card-header img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover
+}
+
+.card-header img:hover {
+
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+        0 24px 46px var(--box-shadow-color);
+    border: rgb(204, 92, 1) solid 3px;
+    background: linear-gradient(#dcdcdf51, #f77801);
+}
+
+.card:hover .overlay {
+    transform: scale(4) translateZ(0);
+}
+
+
+
+.card-body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 350px;
+}
+
+
+.card button,
+.midzer button,
+input[type=button] {
+    --bg: #e7833c;
+    --text-color: #fff;
+    position: relative;
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .2s;
+    letter-spacing: 1px;
+    box-shadow: #c0392b 0 7px 2px, #000 0 8px 5px;
+    cursor: pointer
+}
+
+.card button {
+    margin-left: 4em;
+    width: 150px;
+    border: none;
+    background: var(--bg);
+    padding: 1em;
+    border-radius: 5px
+}
+
+.card button:hover {
+    opacity: 1
+}
+
+.card button:active {
+    top: 4px;
+    box-shadow: #c0392b 0 3px 2px, #000 0 3px 5px
+}
+
+.card-body p {
+    font-size: 18px;
+    margin: 0 0 40px
+}
+
+
+/* Catégories */
+
+.tag {
+    background: #cccccc36;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    padding: 2px 10px;
+    text-transform: uppercase
+}
+
+.tag-teal {
+    background-color: #d56f26
+}
+
+.tag-tear {
+    background-color: #a3867b
+}
+
+.tag-tel {
+    background-color: #8ac892;
+}
+
+.tag-reg {
+    background-color: rgb(250, 0, 0);
+}
+
+.tag-fti {
+    background-color: #DBD5B5;
+}
+
+.tag-rel {
+    background-color: rgba(157, 94, 162, 0.559);
+}
+
+
+
+
+
+.cop {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5em;
+    margin-bottom: 25px
+}
+
+.cop2 {
+    position: relative;
+    align-items: center;
+    justify-content: center
+}
+
+.cop span {
+    flex-direction: row;
+    align-items: center
+}
+
+/* Carousel */
+
+#slider-container #slider .slide span,
+.nav li a {
+    color: #000;
+}
+
+
+
+.card a,
+.tag {
+    color: #fff
+}
+
+#menu-bar,
+#tap-target,
+.tag {
+    cursor: pointer
+}
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px
+}
+
+.slide {
+    margin-right: 40px
+}
+
+#slider-container {
+    height: 100vh;
+    width: 85vw;
+    max-width: 1400px;
+    overflow: hidden;
+
+}
+
+#slider-container .btn {
+    position: fixed;
+    top: calc(50% - -100px);
+    height: 30px;
+    width: 30px;
+    border-left: 8px solid #050102;
+    border-top: 8px solid #000;
+    cursor: pointer;
+}
+
+#slider-container .btn:hover {
+    transform: scale(1.2)
+}
+
+#slider-container .btn.inactive {
+    border-color: #ef9400
+}
+
+#slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 50px
+}
+
+#slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 50px
+}
+
+#slider-container #slider {
+    display: flex;
+    width: 950%;
+    height: 100%;
+    transition: .5s
+}
+
+@media only screen and (min-width:1100px) {
+    #slider-container #slider .slide {
+        width: calc(2.5% - 20px)
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    #slider-container #slider .slide {
+        width: calc(3.3333333% - 20px)
+    }
+}
+
+@media only screen and (max-width:900px) {
+    #slider-container #slider .slide {
+        width: calc(5% - 20px)
+    }
+}
+
+@media only screen and (max-width:550px) {
+    #slider-container #slider .slide {
+        width: calc(10% - 20px)
+    }
+}
+
+
+@media (max-width:900px) {
+    .intro {
+        display: flex;
+        flex-direction: column
+    }
+
+    .midzer button,
+    input[type=button] {
+        margin: 0 auto
+    }
+}

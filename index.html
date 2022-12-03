@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="icon" href="./assets/bavarder.png">
+</head>
+
+<body>
+
+	<header class="maine">
+
+		<div id="menu">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<nav class="nav" id="nav">
+				<ul>
+					<li><a href="../index.html">Accueil </a></li>
+
+					<li><a href="https://efficiencecreative.fr/qui-sommes-nous/">A propos </a></li>
+
+					<li><a href="https://efficiencecreative.fr/ateliers-numeriques/">Ateliers</a></li>
+
+					<li><a href="https://efficiencecreative.fr/efficience-contact/">Nous contacter</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="menu-bg" id="menu-bg"></div>
+
+		<div id="root"></div>
+
+	</header>
+
+	<div id="container">
+
+		<div id="slider-container">
+			<div id="slider">
+				<div class="slide">
+					<span>
+						<div class="card">
+							<div class="card-header">
+								<a href="./sourislearn/Souris2.html"><img src="./assets/molette.jpg" alt="rover"/></a>
+							</div>
+							<div class="card-body">
+								<span class="tag tag-teal">Souris</span>
+								<h4>
+									Utiliser la molette de la souris
+								</h4>
+								<p>
+									Initiation à l'utilisation de la molette pour descendre ou monter.
+								</p>
+								<div>
+									<a href="./sourislearn/Souris2.html"> <button> Exercice </button></a>
+								</div>
+							</div>
+						</div>
+					</span>
+				</div>
+				
+				<div class="slide">
+					<span>
+						<div class="card">
+							<div class="card-header">
+								<a href="./keyboardlearn/Clavier.html"><img src="./assets/keyboard/kek.png" alt="rover"/></a>
+							</div>
+							<div class="card-body">
+								<span class="tag tag-tear">Clavier</span>
+								<h4>
+									Apprendre les touches du clavier
+								</h4>
+								<p>
+									Initiation au positionnement des touches d'un clavier d'ordinateur.
+								</p>
+								<div>
+									<a href="./keyboardlearn/Clavier.html"> <button> Exercice </button></a>
+								</div>
+							</div>
+						</div>
+						<span>
+				</div>
+				
+				<div class="slide">
+					<span>
+						<div class="card">
+							<div class="card-header">
+								<a href="./telephonelearn/portable1.html"><img src="./assets/tel1.jpg" alt="rover"/></a>
+							</div>
+							<div class="card-body">
+								<span class="tag tag-tel">Téléphone</span>
+								<h4>
+									Utilisation d'un téléphone.
+								</h4>
+								<p>
+									Initiation de base aux applications d'un téléphone, Android ou Iphone.
+								</p>
+								<div>
+									<a href="./telephonelearn/portable1.html"> <button> Exercice </button></a>
+								</div>
+							</div>
+						</div>
+					</span>
+				</div>
+				<div class="slide">
+					<span>
+						<div class="card">
+							<div class="card-header">
+								<a href="./complearn/pc1.html"><img src="./assets/pc1.jpg" alt="rover"/></a>
+							</div>
+							<div class="card-body">
+								<span class="tag tag-reg">Ordinateur</span>
+								<h4>
+									Les bases d'un ordinateur.
+								</h4>
+								<p>
+									Comment fonctionne un ordinateur ainsi que ses branchements.
+								</p>
+								<div>
+									<a href="./complearn/pc1.html"> <button> Exercice </button></a>
+								</div>
+							</div>
+						</div>
+					</span>
+				</div>
+				<div class="slide">
+					<span>
+						<div class="card">
+							<div class="card-header">
+								<a href="./Formslearn/Formulaires.html"><img src="./assets/register.jpg" alt="rover"/></a>
+							</div>
+							<div class="card-body">
+								<span class="tag tag-rel">Administration</span>
+								<h4>
+									Comment s'inscrire sur un site.
+								</h4>
+								<p>
+									Apprenez comment effectuer des démarches en ligne.
+								</p>
+								<div>
+									<a href="./Formslearn/Formulaires.html"> <button> Exercice </button></a>
+								</div>
+							</div>
+						</div>
+					</span>
+				</div>
+				<div class="slide">
+					<span>
+						<div class="card">
+							<div class="card-header">
+								<a href="./Reseaux/reseauxsociaux.html"><img src="./assets/medias.jpg" alt="rover" /></a>
+							</div>
+							<div class="card-body">
+								<span class="tag tag-fti">Réseaux sociaux</span>
+								<h4>
+									Les réseaux sociaux, un bien ? Un mal ?
+								</h4>
+								<p>
+									À propos des réseaux sociaux, est-ce bien ? Comment les utiliser ?
+								</p>
+								<div>
+									<a href="./Reseaux/reseauxsociaux.html" > <button> Exercice	</button></a>
+								</div>
+							</div>
+						</div>
+					</span>
+				</div>
+			</div>
+			
+			<span onclick="slideRight()" class="btn"></span>
+			<span onclick="slideLeft()" class="btn"></span>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="cop2">
+			Copyright <p style="color: orange; "> &copy; </p>Efficience
+		</div>
+	</footer>
+</body>
+
+<script src="js/main.js"></script>
+
+</html>

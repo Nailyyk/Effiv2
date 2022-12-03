@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réseaux sociaux.</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="maine">
+
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="../index.html">Accueil </a></li>
+
+                    <li><a href="https://efficiencecreative.fr/qui-sommes-nous/">A propos </a></li>
+
+                    <li><a href="https://efficiencecreative.fr/ateliers-numeriques/">Ateliers</a></li>
+
+                    <li><a href="https://efficiencecreative.fr/efficience-contact/">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <div id="root"></div>
+    </header>
+    <div id="all">
+        <div class="tab">
+            <button id="tablinks" onclick="openOnglet(event,'Intro')">Introduction</button>
+            <button id="tablinks" onclick="openOnglet(event,'Register')">Utilisation</button>
+            <button id="tablinks" onclick="openOnglet(event,'Pratique')"></button>
+            <button id="tablinks" onclick="openOnglet(event,'Gngn')"></button>
+        </div>
+
+        <div class="presentation">
+            <video autoplay muted loop id="myVideo">
+                <source src="../assets/reseauxs.mp4" type="video/mp4">
+            </video>
+            <div class="lefts">
+                <h1>Les réseaux sociaux</h1>
+            </div>
+            <div class="rights">
+                <p>Peut-on faire tout et n'importe quoi sur les réseaux sociaux ?
+                    Ont-ils un impact dans ma vie ? Nous allons creuser toutes ces questions.
+                </p>
+            </div>
+        </div>
+
+        <div class="tabcontent" id="Intro">
+            <h2><u>Qu'est que les réseaux sociaux ?</u></h2>
+            <p>Internet a consacré la montée en puissance des réseaux sociaux, devenus pour certains de véritables
+                médias sociaux, qui permettent aux internautes et aux professionnels de créer une page profil et de
+                partager des informations, photos et vidéos avec leur réseau. Des espaces de partage qui se distinguent
+                par leur utilité (personnel, professionnel, rencontres...), leur logo et leurs audiences. En 2020, c'est
+                un peu plus du tiers du temps de surf qui est consacré aux réseaux sociaux et services de messagerie
+                instantanées selon Médiamétrie//Netratings. Ils sont aujourd'hui près de 49 millions, soit 8 Français
+                sur 10, à en utiliser.</p>
+            <img src="/assets/reseauxsociaux.jpg" style="width:800px; margin-left: 50vh;">
+        </div>
+
+        <div class="tabcontent" id="Register">
+            <div class="network">
+            <h3>Comment bien utiliser les réseaux</h3>
+            <h4>Pour les particuliers</h4>
+            <p> Les réseaux sociaux peuvent être très utile de nos jours dans le monde professionnel, c'est pourquoi il
+                faut faire attention à ce qu'on fait ainsi qu'a l'image que l'on renvoit de ces derniers. <br />
+                Il faut faire attention à ce que l'on poste ainsi qu'à ce que nos amis postent de nous. Les recruteurs
+                vont très souvent vérifier vos réseaux lorsque vous candidatez afin de discerner quel type de personne
+                vous êtes.                
+            </p>
+
+            <h4>Pour les entreprises</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos et ut provident quisquam repudiandae, dicta beatae ab alias commodi quibusdam non aperiam debitis est omnis voluptatum deleniti delectus nostrum reiciendis vero pariatur enim sit impedit quos error! Voluptates, id! Error eligendi eos suscipit? Explicabo, pariatur laborum? Esse accusantium assumenda dolor.</p>
+        </div>
+    </div>
+
+        <div class="tabcontent" id="Pratique">
+            <h3>Pratique</h3>
+            <p>Bienvenue sur la page Pratique</p>
+            <div class="picture">
+                <img src="/assets/form.png">
+            </div>
+        </div>
+
+        <div class="tabcontent" id="Gngn">
+            <h3>Gngn</h3>
+            <p>Bienvenue sur la page Gngn</p>
+            <div class="picture">
+                <img src="/assets/form.png">
+            </div>
+        </div>
+    </div>
+
+    <input type="button" value="Large" onclick="document.getElementById('all').style.fontSize = '2.0em'">
+
+
+
+    <script src="/js/javascript.js"></script>
+    <script src="/js/dragand.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

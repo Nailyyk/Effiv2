@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/iccla.png">
+    <title>Clavier</title>
+</head>
+
+<body>
+    <div class="maine">
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="../index.html">Accueil </a></li>
+
+                    <li><a href="https://efficiencecreative.fr/qui-sommes-nous/">A propos </a></li>
+
+                    <li><a href="https://efficiencecreative.fr/ateliers-numeriques/">Ateliers</a></li>
+
+                    <li><a href="https://efficiencecreative.fr/efficience-contact/">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <div id="root"></div>
+    </div>
+
+    <div id="all">
+        <div class="tab">
+            <button id="tablinks" onclick="openOnglet(event,'Intro')">Exercice 1</button>
+            <button id="tablinks" onclick="openOnglet(event,'Register')">Exercice 2</button>
+            <button id="tablinks" onclick="openOnglet(event,'Pratique')">Exercice 3</button>
+            <a href="../games/clavier3.html"><button id="tablinks">Exercice 4</button></a>
+        </div>
+
+
+        <div class="presentation">
+            <video autoplay muted loop id="myVideo">
+                <source src="../assets/production ID_5052894.mp4" type="video/mp4">
+            </video>
+            <div class="lefts">
+                <h1>Apprenons ensemble à se servir d'un clavier</h1>
+            </div>
+            <div class="rights">
+                <p>Pour découvrir les fonctionnalités du clavier, dirigez votre souris sur la barre de navigation orange
+                    et commencez par l'exercice 1.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="tabcontent" id="Intro">
+
+            <div class="mid">
+                <img src="../assets/keyboard/clavierperso.png">
+            </div>
+
+            <div class="howtobasics">
+                <h2>Touches importantes</h2><br />
+
+                <p>Les touches <span style="color: rgba(23, 156, 11, 0.988);"><u>verte</u></span> sont les touches
+                    numériques mais ce sont
+                    aussi les touches pour les symboles, à savoir qu'une combinaison de touche est nécessaire pour
+                    utiliser
+                    les
+                    numéros (Majuscule + la touche), pour utiliser les symbols à droite de la touche, il faut appuyer
+                    sur la
+                    touche "Alt gr" (la touche orange à côté de la grande barre espace) + la touche de votre choix.
+                    Faites
+                    un
+                    test en dessous</p>
+                <input type="text">
+                <p>Les touches <span style="color: rgb(2, 143, 175);"><u>bleu</u></span> sont simplement les lettres de
+                    l'alphabet, à savoir que tous les claviers ont la même disposition commençant par AZERTY (hors
+                    claviers
+                    anglais QWERTY), il est possible de mettre une majuscule en appuyant sur la touche Majuscule(flêche
+                    vers
+                    le
+                    haut + la touche rose que vous désirez mettre en majuscule)</p>
+                <input type="text">
+                <p>Les touches <span style="color: rgb(255, 0, 0);"><u>rouge</u></span> sont tout ce qui concerne la
+                    ponctuation, en appuyant une fois simple dessus, vous afficherez la ponctuation située sur la bas de
+                    la
+                    touche, si vous voulez celle du dessus, appuyez simplement sur <b>Majuscule</b> + <b> la touche</b>
+                </p>
+                <input type="text">
+
+                <p>Les touches <span style="color: rgba(121, 3, 3, 0.988);"><u>bordeaux</u></span> sont des touches
+                    appelées
+                    "fonction"</p>
+                <p>Les touches <img src="../assets/keyboard/touchesf.png"> sont des touches .</p>
+
+            </div>
+
+
+            <div class="chapter">
+                <h3><i>2- Les touches du clavier ayant un rôle particulier.</i></h3>
+
+                <h4>2.1- la touche "Entrée"</h4>
+                <p>La touche <img src="../assets/keyboard/pngegg.png"> sert à valider la saisie d'un texte ou de passer
+                    à la ligne suivante. Elle se trouve à deux endroits du clavier cf image en haut (touches mauves).
+                </p>
+
+                <h4>2.2 - la touche "Retour"</h4>
+                <p>La touche <img src="../assets/keyboard/delete.png"> sert à supprimer la dernière lettre saisie si
+                    simple pression, si pression longue, supprime plusieurs caractères.</p>
+
+                <h4>2.3 - la touche "Espace"</h4>
+                <p>La touche <img src="../assets/keyboard/espace.png"> "espace" la plus grande touche du clavier sert à
+                    insérer un espace entre deux caractère d'une simple pression.</p>
+
+                <h4>2.4 - la touche ctrl "Contrôle"</h4>
+                <p>La touche <img src="../assets/keyboard/ctrl1.png"> est utilisée en combinaison d'autres touches tel
+                    que la touche <span style="color:orange">"C"</span> + ensuite la touche <span
+                        style="color:orange">"V"</span> pour faire un copier/coller du texte saisi au préalable avec la
+                    souris <img src="../assets/keyboard/ctrl1.png"> + C/V</p>
+
+                <h4>2.5 - la touche "Espace"</h4>
+                <p>La touche <img src="../assets/keyboard/ctrl1.png"> sert à supprimer la dernière lettre saisie si
+                    simple pression, si pression longue, supprime plusieurs caractères.</p>
+
+                <h4>2.6 - la touche "Espace"</h4>
+                <p>La touche <img src="../assets/keyboard/ctrl1.png"> sert à supprimer la dernière lettre saisie si
+                    simple pression, si pression longue, supprime plusieurs caractères.</p>
+
+                <h4>2.7 - la touche "Espace"</h4>
+                <p>La touche <img src="../assets/keyboard/ctrl1.png"> sert à supprimer la dernière lettre saisie si
+                    simple pression, si pression longue, supprime plusieurs caractères.</p>
+
+                <h4>2.8 - la touche "Espace"</h4>
+                <p>La touche <img src="../assets/keyboard/ctrl1.png"> sert à supprimer la dernière lettre saisie si
+                    simple pression, si pression longue, supprime plusieurs caractères.</p>
+
+            </div>
+        </div>
+
+
+        <div class="tabcontent" id="Register">
+
+            <h1>Entraînement de niveau 2</h1>
+            <div class="splitmid">
+                <div class="ecritest">
+                    <h2>Désormais, il est temps de pratiquer, recopiez le texte suivant dans l'encadré :</h2> <br />
+                    <p> "J'ai déjà eu l'occasion d'écrire un e-mail à Bernardo0290@gmail.com pour lui raconter comment s'est passé mon voyage sur les îles de Robinson Crusoé. "
+                    </p>
+                    <textarea placeholder="Écrivez votre texte ici"></textarea>
+
+
+
+                    <h2>Parfait, maintenant, entraînez vous à copier/coller ce même texte à l'aide des raccourcis
+                        clavier
+                        "Ctrl+C / Ctrl+V"</h2> <br />
+                    <textarea placeholder="Copiez le texte ici"></textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tabcontent" id="Pratique">
+
+            <div class="picture">
+                <img src="/assets/form.png">
+            </div>
+        </div>
+
+        <div class="tabcontent" id="Gngn">
+            <h3>Jeux</h3>
+            <p>Bienvenue sur la page Gngn</p>
+            <div class="picture">
+                <img src="/assets/form.png">
+            </div>
+        </div>
+
+        <input type="button" value="Large" onclick="document.getElementById('all').style.fontSize = '2.0em'">
+
+        <div class="cop">
+            <span>
+                Copyright <p style="color: orange; "> &copy; </p>Efficience
+            </span>
+        </div>
+    </div>
+
+
+    <script src="/js/javascript.js"></script>
+    <script src="/js/dragand.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

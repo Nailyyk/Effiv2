@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/mouse.png">
+    <title>Souris</title>
+</head>
+
+<body>
+    <div class="maine">
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="../index.html">Accueil </a></li>
+
+                    <li><a href="https://efficiencecreative.fr/qui-sommes-nous/">A propos </a></li>
+
+                    <li><a href="https://efficiencecreative.fr/ateliers-numeriques/">Ateliers</a></li>
+
+                    <li><a href="https://efficiencecreative.fr/efficience-contact/">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <div id="root"></div>
+    </div>
+
+<div id="all">
+    <div class="intro"><br />
+        <h2 id="titre">Bonjour, bienvenue dans l'entraînement niveau 1.</h2> <br />
+        <p>
+            Dirigez votre souris à l'aide de votre main vers l'encadré en dessous.
+        </p>
+
+        <canvas id="myCanvas" width="480" height="320"></canvas>
+        <!-- <button type="button" onclick="up();">Up</button>
+        <button type="button" onclick="down();">Down</button>
+        <button type="button" onclick="reset()">Reset</button>
+        <span id="count"></span> -->
+
+        <span id="describe">
+            Ce jeu "casse brique" est fait pour vous entraînez à bouger la souris, si la balle tombe, une petite fenêtre
+            va s'ouvrir en haut, cliquez simplement sur <span style="color: orange;"><b> "OK" </b></span> pour relancer
+            Si vous voulez mettre le jeu en pause appuyer sur <span style="color: orange;"><b> "P" </b></span>
+        </span>
+
+    </div>
+    <input type="button" value="Large" onclick="document.getElementById('all').style.fontSize = '2.0em'">
+</div>
+    <footer>
+        <div class="cop">
+           
+            <span>
+                Copyright <p style="color: orange; "> &copy; </p>Efficience
+            </span>
+           
+        </div>
+
+    </footer>
+    <script src="../js/javascript.js"></script>
+</body>
+
+</html>
